@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Denis Bayor | Software Developer — Web & Mobile Applications</title>
+  <meta name="description" content="Denis Bayor is a Computer Science graduate from the University of Ghana who builds practical web applications, mobile apps and database-driven software systems." />
+  <meta name="author" content="Denis Bayor" />
+  <meta name="theme-color" content="#0f1f3d" />
+
+  <!-- Social sharing previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Denis Bayor | Software Developer" />
+  <meta property="og:description" content="Web development, mobile applications and practical software solutions." />
+  <!-- TODO: after deploying, set your live URL and a preview image -->
+  <!-- <meta property="og:url" content="https://denisbayor.vercel.app/" /> -->
+  <!-- <meta property="og:image" content="https://denisbayor.vercel.app/assets/og-image.png" /> -->
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230f1f3d'/><text x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='700' font-size='26' fill='%2322c55e'>DB</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Denis Bayor — home">DB<span>.</span></a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ 1. HOME / HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Computer Science · Software Development</p>
+          <h1>Turning ideas into <span class="accent">practical digital solutions.</span></h1>
+          <p class="lead">
+            I'm <strong>Denis Bayor</strong>, a Computer Science graduate from the University of Ghana,
+            focused on building useful web applications, mobile apps and software systems
+            for people, schools and businesses.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+          <ul class="hero-tags" aria-label="Core focus areas">
+            <li>Web Development</li>
+            <li>Java &amp; JavaScript</li>
+            <li>Mobile Development</li>
+            <li>Database Systems</li>
+          </ul>
+        </div>
+
+        <div class="hero-card reveal" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-bar"><span></span><span></span><span></span><em>developer.js</em></div>
+<pre><code><span class="k">const</span> developer = {
+  name: <span class="s">"Denis Bayor"</span>,
+  role: <span class="s">"Software Developer"</span>,
+  based: <span class="s">"Accra, Ghana"</span>,
+  builds: [
+    <span class="s">"Web apps"</span>,
+    <span class="s">"Mobile apps"</span>,
+    <span class="s">"Business software"</span>
+  ],
+  stack: [<span class="s">"Java"</span>, <span class="s">"JavaScript"</span>,
+          <span class="s">"React Native"</span>, <span class="s">"SQL"</span>],
+  openTo: <span class="s">"jobs · freelance · collabs"</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="section-head reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>A developer who starts with the problem.</h2>
+        </div>
+        <div class="about-text reveal">
+          <p>
+            I studied Computer Science at the <strong>University of Ghana</strong>, where I built software across
+            the web, mobile and desktop — from a sustainable e-commerce interface to Java business systems
+            and React Native apps.
+          </p>
+          <p>
+            I enjoy turning real requirements into working software: understanding who will use it,
+            designing a clear interface, structuring the data and shipping something people can actually use.
+            My EcoMart project taught me to back design decisions with genuine usability evaluation,
+            not guesswork.
+          </p>
+          <p>
+            I'm currently looking for opportunities in software development and IT, and I'm open to
+            freelance projects and collaborations — especially building practical tools for schools
+            and small businesses.
+          </p>
+          <div class="about-facts">
+            <div><span>Education</span><strong>BSc Computer Science, University of Ghana</strong></div>
+            <div><span>Focus</span><strong>Web, mobile &amp; database-driven applications</strong></div>
+            <div><span>Location</span><strong>Accra, Ghana</strong></div>
+          </div>
+          <!-- TODO: add your CV at assets/Denis-Bayor-CV.pdf -->
+          <a href="assets/Denis-Bayor-CV.pdf" class="btn btn-outline" download>Download CV (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Skills &amp; Technologies</p>
+          <h2>What I work with</h2>
+          <p class="section-sub">Grouped by how I can demonstrate them — every skill here is backed by a project below.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">&lt;/&gt;</div>
+            <h3>Programming Languages</h3>
+            <ul class="chips">
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>C#</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li class="chip-muted">Python <small>developing</small></li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">▣</div>
+            <h3>Frameworks &amp; App Development</h3>
+            <ul class="chips">
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>Responsive Web Design</li>
+              <li>Java Application Development</li>
+              <li>Windows Forms</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">⚙</div>
+            <h3>Technical Capabilities</h3>
+            <ul class="chips">
+              <li>REST API Integration</li>
+              <li>Database Design</li>
+              <li>CRUD Operations</li>
+              <li>Git &amp; GitHub</li>
+              <li>Deployment (Vercel)</li>
+              <li>UI/UX Evaluation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Things I've built</h2>
+          <p class="section-sub">Each project explains the problem, my solution and the technologies behind it.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter-btn" data-filter="mobile" aria-pressed="false">Mobile</button>
+          <button class="filter-btn" data-filter="desktop" aria-pressed="false">Desktop</button>
+          <button class="filter-btn" data-filter="research" aria-pressed="false">Research</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- ---- Project 1: EcoMart (lead project) ---- -->
+          <article class="project-card featured reveal" data-category="web research">
+            <div class="project-thumb thumb-eco">
+              <!-- Add a real screenshot at assets/projects/ecomart.png — the gradient shows until then -->
+              <img src="assets/projects/ecomart.png" alt="EcoMart sustainable shopping interface showing product listings" loading="lazy" onerror="this.remove()" />
+              <span class="thumb-label">EcoMart</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="badge badge-done">Completed · Live</span>
+                <span class="badge">Featured</span>
+              </div>
+              <h3>EcoMart — Sustainable E-commerce Interface</h3>
+              <p>
+                An e-commerce interface that nudges shoppers toward greener choices through eco-friendly
+                delivery defaults and visible carbon-impact information — designed, built and evaluated
+                with real users.
+              </p>
+
+              <details class="case-study">
+                <summary>Read the case study</summary>
+                <dl>
+                  <dt>Problem</dt>
+                  <dd>Online shoppers rarely see the environmental cost of their choices at the moment they make them.</dd>
+                  <dt>Solution</dt>
+                  <dd>A shopping interface that makes sustainable options easy: eco-friendly delivery as the default and carbon-impact information alongside products.</dd>
+                  <dt>My contribution</dt>
+                  <dd>Interface design, front-end development, applying persuasive-technology principles and running the usability evaluation.</dd>
+                  <dt>Key features</dt>
+                  <dd>Product browsing, sustainable delivery defaults, carbon-impact indicators, responsive layout.</dd>
+                  <dt>Results</dt>
+                  <!-- TODO: replace with your genuine usability-study findings -->
+                  <dd>Evaluated through a usability study. <em>Add your real findings here.</em></dd>
+                </dl>
+              </details>
+
+              <ul class="tech-list">
+                <li>JavaScript</li><li>HTML/CSS</li><li>Responsive UI</li><li>Usability Testing</li><li>Vercel</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://eco-friendly-shopping-five.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo ↗</a>
+                <a href="https://github.com/bayordenis/Eco-friendly-shopping" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ---- Project 2: Mobile apps ---- -->
+          <article class="project-card reveal" data-category="mobile">
+            <div class="project-thumb thumb-mobile">
+              <img src="assets/projects/mobile.png" alt="Screens from React Native mobile applications" loading="lazy" onerror="this.remove()" />
+              <span class="thumb-label">Mobile Apps</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="badge badge-progress">Being polished</span></div>
+              <h3>Mobile Applications — React Native &amp; Expo</h3>
+              <p>
+                Cross-platform mobile apps including a task manager, a fashion shopping app and an
+                academic deadline organizer, built to practise real mobile app architecture.
+              </p>
+              <ul class="feature-list">
+                <li>Reusable components &amp; screen navigation</li>
+                <li>State management &amp; persistent storage</li>
+                <li>API integration where implemented</li>
+              </ul>
+              <ul class="tech-list">
+                <li>React Native</li><li>Expo</li><li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <!-- TODO: link the repo once it is public -->
+                <a href="https://github.com/bayordenis" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ---- Project 3: Nkwa Real Estate ---- -->
+          <article class="project-card reveal" data-category="desktop">
+            <div class="project-thumb thumb-java">
+              <img src="assets/projects/nkwa.png" alt="Nkwa Real Estate Expenditure System interface" loading="lazy" onerror="this.remove()" />
+              <span class="thumb-label">Nkwa RE</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="badge">Coursework</span></div>
+              <h3>Nkwa Real Estate Expenditure System</h3>
+              <p>
+                A Java business information system for recording and tracking a real-estate company's
+                expenditure, with validation and clear business rules.
+              </p>
+              <ul class="feature-list">
+                <li>Object-oriented design</li>
+                <li>Data validation &amp; business logic</li>
+                <li>Expenditure tracking, reports &amp; error handling</li>
+              </ul>
+              <ul class="tech-list">
+                <li>Java</li><li>OOP</li><li>Data Structures</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/bayordenis" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ---- Project 4: Medical appointments ---- -->
+          <article class="project-card reveal" data-category="desktop">
+            <div class="project-thumb thumb-med">
+              <img src="assets/projects/medical.png" alt="Medical appointment booking desktop application" loading="lazy" onerror="this.remove()" />
+              <span class="thumb-label">MedBook</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="badge">Coursework</span></div>
+              <h3>Medical Appointment Booking System</h3>
+              <p>
+                A C# Windows Forms desktop application that lets staff book and manage patient
+                appointments through structured, validated forms.
+              </p>
+              <ul class="feature-list">
+                <li>Appointment booking workflow</li>
+                <li>Form validation &amp; user feedback</li>
+                <li>Patient and appointment records</li>
+              </ul>
+              <ul class="tech-list">
+                <li>C#</li><li>.NET</li><li>Windows Forms</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/bayordenis" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-state" hidden>No projects in this category yet — check back soon.</p>
+
+        <div class="center more-link reveal">
+          <a href="https://github.com/bayordenis" target="_blank" rel="noopener" class="text-link">See all my repositories on GitHub →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. EXPERIENCE & SERVICES ============ -->
+    <section class="section section-alt" id="experience">
+      <div class="container exp-grid">
+        <div>
+          <div class="section-head reveal">
+            <p class="eyebrow">Experience</p>
+            <h2>Where I've been</h2>
+          </div>
+          <ol class="timeline">
+            <li class="reveal">
+              <span class="tl-dot" aria-hidden="true"></span>
+              <p class="tl-date">National Service</p>
+              <h3>Zannoo International School</h3>
+              <!-- TODO: replace with the responsibilities you actually carry out (e.g. teaching ICT, running a coding club, IT support) -->
+              <p>Serving my national service year, contributing my computing skills to the school.</p>
+            </li>
+            <li class="reveal">
+              <span class="tl-dot" aria-hidden="true"></span>
+              <p class="tl-date">Education</p>
+              <h3>BSc Computer Science — University of Ghana</h3>
+              <p>Software engineering, databases, mobile and web development, and human-computer interaction — including the EcoMart usability research project.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <div class="section-head reveal">
+            <p class="eyebrow">Services</p>
+            <h2>How I can help</h2>
+          </div>
+          <ul class="services">
+            <li class="reveal"><h3>Website development</h3><p>Personal, school and small-business websites that work on every device.</p></li>
+            <li class="reveal"><h3>Web applications</h3><p>Interactive systems that handle real business workflows.</p></li>
+            <li class="reveal"><h3>Mobile apps</h3><p>Android-focused applications with React Native and Expo.</p></li>
+            <li class="reveal"><h3>Software development</h3><p>Java-based applications and desktop tools.</p></li>
+            <li class="reveal"><h3>Technical support</h3><p>Website updates, deployment help and software troubleshooting.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Have a project in mind?</h2>
+          <p class="lead">Let's discuss how technology can help solve your problem — whether it's a job opportunity, a freelance project or a collaboration.</p>
+          <ul class="contact-links">
+            <!-- TODO: replace with your professional email -->
+            <li><a href="mailto:your.email@example.com" id="email-link"><span aria-hidden="true">✉</span> your.email@example.com</a></li>
+            <li><a href="https://github.com/bayordenis" target="_blank" rel="noopener"><span aria-hidden="true">⌘</span> github.com/bayordenis</a></li>
+            <!-- TODO: replace with your LinkedIn profile URL -->
+            <li><a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener"><span aria-hidden="true">in</span> LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <!--
+          The form sends through Formspree (free). Create a form at https://formspree.io,
+          then replace YOUR_FORM_ID below. Until then, submitting opens the visitor's email app instead.
+        -->
+        <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Denis Bayor. Built with HTML, CSS &amp; JavaScript.</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/bayordenis" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="#top">Back to top ↑</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
