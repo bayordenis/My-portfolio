@@ -299,6 +299,39 @@ ul { margin: 0; padding: 0; list-style: none; }
 .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
 .js .reveal.visible { opacity: 1; transform: none; }
 
+/* ---------- Hero text animation ---------- */
+.hero h1 .word {
+  display: inline-block; overflow: hidden; vertical-align: bottom;
+  padding-bottom: .12em; margin-bottom: -.12em;
+}
+.hero h1 .word > span {
+  display: inline-block; transform: translateY(105%); opacity: 0;
+  animation: word-up .75s cubic-bezier(.2, .75, .25, 1) forwards;
+  animation-delay: calc(var(--i) * 75ms + 150ms);
+}
+@keyframes word-up { to { transform: none; opacity: 1; } }
+
+/* Green highlight sweep under the accent phrase */
+.hero h1.is-split .accent {
+  background-image: linear-gradient(rgba(34, 197, 94, .22), rgba(34, 197, 94, .22));
+  background-repeat: no-repeat; background-position: 0 88%; background-size: 0% .28em;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  animation: sweep .9s ease-out forwards; animation-delay: var(--after);
+}
+@keyframes sweep { to { background-size: 100% .28em; } }
+
+/* Paragraph, buttons and tags follow the headline */
+.hero-text.is-animated .lead,
+.hero-text.is-animated .hero-actions,
+.hero-text.is-animated .hero-tags {
+  opacity: 0; transform: translateY(14px);
+  animation: fade-up .7s ease-out forwards;
+}
+.hero-text.is-animated .lead { animation-delay: calc(var(--after) + .1s); }
+.hero-text.is-animated .hero-actions { animation-delay: calc(var(--after) + .3s); }
+.hero-text.is-animated .hero-tags { animation-delay: calc(var(--after) + .45s); }
+@keyframes fade-up { to { opacity: 1; transform: none; } }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
   .hero-grid, .about-grid, .exp-grid, .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
