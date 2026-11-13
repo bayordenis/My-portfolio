@@ -51,6 +51,56 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 p { margin: 0 0 1em; }
 ul { margin: 0; padding: 0; list-style: none; }
 
+.menu-bar {
+  overflow: hidden;
+  width: 100%;
+  background: #111;
+  padding: 14px 0;
+}
+
+.menu-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-menu 20s linear infinite;
+}
+
+.menu-bar:hover .menu-track {
+  animation-play-state: paused; /* pause so people can click */
+}
+
+.menu-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-items li {
+  padding: 0 40px;
+  white-space: nowrap;
+}
+
+.menu-items a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu-items a:hover {
+  color: #00d4ff;
+}
+
+@keyframes scroll-menu {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  .menu-track { animation: none; }
+}
+
 .container { width: min(1120px, 100% - 2.5rem); margin-inline: auto; }
 .center { text-align: center; }
 
@@ -298,6 +348,39 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* Reveal-on-scroll (only applied when JS runs) */
 .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
 .js .reveal.visible { opacity: 1; transform: none; }
+
+/* ---------- Hero text animation ---------- */
+.hero h1 .word {
+  display: inline-block; overflow: hidden; vertical-align: bottom;
+  padding-bottom: .12em; margin-bottom: -.12em;
+}
+.hero h1 .word > span {
+  display: inline-block; transform: translateY(105%); opacity: 0;
+  animation: word-up .75s cubic-bezier(.2, .75, .25, 1) forwards;
+  animation-delay: calc(var(--i) * 75ms + 150ms);
+}
+@keyframes word-up { to { transform: none; opacity: 1; } }
+
+/* Green highlight sweep under the accent phrase */
+.hero h1.is-split .accent {
+  background-image: linear-gradient(rgba(34, 197, 94, .22), rgba(34, 197, 94, .22));
+  background-repeat: no-repeat; background-position: 0 88%; background-size: 0% .28em;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  animation: sweep .9s ease-out forwards; animation-delay: var(--after);
+}
+@keyframes sweep { to { background-size: 100% .28em; } }
+
+/* Paragraph, buttons and tags follow the headline */
+.hero-text.is-animated .lead,
+.hero-text.is-animated .hero-actions,
+.hero-text.is-animated .hero-tags {
+  opacity: 0; transform: translateY(14px);
+  animation: fade-up .7s ease-out forwards;
+}
+.hero-text.is-animated .lead { animation-delay: calc(var(--after) + .1s); }
+.hero-text.is-animated .hero-actions { animation-delay: calc(var(--after) + .3s); }
+.hero-text.is-animated .hero-tags { animation-delay: calc(var(--after) + .45s); }
+@keyframes fade-up { to { opacity: 1; transform: none; } }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {

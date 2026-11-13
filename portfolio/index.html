@@ -30,6 +30,24 @@
   <header class="site-header" id="top">
     <nav class="nav container" aria-label="Main navigation">
       <a href="#home" class="logo" aria-label="Denis Bayor — home">DB<span>.</span></a>
+<div class="menu-bar">
+  <div class="menu-track">
+    <!-- Set 1 -->
+    <ul class="menu-items">
+      <li><a href="#computer-science">Computer Science</a></li>
+      <li><a href="#software-development">Software Development</a></li>
+      <li><a href="#digital-solutions">Digital Solutions</a></li>
+      <li><a href="mailto:bayordenis766@gmail.com">Contact</a></li>
+    </ul>
+    <!-- Set 2: duplicate for a seamless loop -->
+    <ul class="menu-items" aria-hidden="true">
+      <li><a href="#computer-science" tabindex="-1">Computer Science</a></li>
+      <li><a href="#software-development" tabindex="-1">Software Development</a></li>
+      <li><a href="#digital-solutions" tabindex="-1">Digital Solutions</a></li>
+      <li><a href="mailto:bayordenis766@gmail.com" tabindex="-1">Contact me</a></li>
+    </ul>
+  </div>
+</div>
 
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -51,7 +69,7 @@
     <!-- ============ 1. HOME / HERO ============ -->
     <section class="hero" id="home">
       <div class="container hero-grid">
-        <div class="hero-text reveal">
+        <div class="hero-text">
           <p class="eyebrow">Computer Science · Software Development</p>
           <h1>Turning ideas into <span class="accent">practical digital solutions.</span></h1>
           <p class="lead">
@@ -77,7 +95,7 @@
 <pre><code><span class="k">const</span> developer = {
   name: <span class="s">"Denis Bayor"</span>,
   role: <span class="s">"Software Developer"</span>,
-  based: <span class="s">"Accra, Ghana"</span>,
+  based: <span class="s">"Ghana"</span>,
   builds: [
     <span class="s">"Web apps"</span>,
     <span class="s">"Mobile apps"</span>,
@@ -119,11 +137,11 @@
           <div class="about-facts">
             <div><span>Education</span><strong>BSc Computer Science, University of Ghana</strong></div>
             <div><span>Focus</span><strong>Web, mobile &amp; database-driven applications</strong></div>
-            <div><span>Location</span><strong>Accra, Ghana</strong></div>
-          </div>
+            <div><span>Location</span><strong>Ghana</strong></div>
+          <!-- </div> -->
           <!-- TODO: add your CV at assets/Denis-Bayor-CV.pdf -->
-          <a href="assets/Denis-Bayor-CV.pdf" class="btn btn-outline" download>Download CV (PDF)</a>
-        </div>
+          <!-- <a href="assets/Denis-Bayor-CV.pdf" class="btn btn-outline" download>Download CV (PDF)</a> -->
+        <!-- </div> -->
       </div>
     </section>
 
@@ -183,7 +201,7 @@
       <div class="container">
         <div class="section-head center reveal">
           <p class="eyebrow">Projects</p>
-          <h2>Things I've built</h2>
+          <h2>Some of the hings I've built</h2>
           <p class="section-sub">Each project explains the problem, my solution and the technologies behind it.</p>
         </div>
 
@@ -229,7 +247,7 @@
                   <dd>Product browsing, sustainable delivery defaults, carbon-impact indicators, responsive layout.</dd>
                   <dt>Results</dt>
                   <!-- TODO: replace with your genuine usability-study findings -->
-                  <dd>Evaluated through a usability study. <em>Add your real findings here.</em></dd>
+                  <dd>Evaluated through a usability study.</dd>
                 </dl>
               </details>
 
@@ -243,7 +261,34 @@
             </div>
           </article>
 
-          <!-- ---- Project 2: Mobile apps ---- -->
+           <!-- ---- Project 2: Mobile apps ---- -->
+          <article class="project-card reveal" data-category="web">
+            <div class="project-thumb thumb-mobile">
+              <img src="assets/projects/mobile.png" alt="Screens from React Native mobile applications" loading="lazy" onerror="this.remove()" />
+              <span class="thumb-label">Mama-D Kitchen</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="badge badge-progress">Being polished</span></div>
+              <h3>A restaurant website with appealing designs &amp; Mama D Kitchen</h3>
+              <p>
+                Mama D Kitchen is a Ghanaian restaurant that requested for a website that suitcase their delicacies.  
+              </p>
+              <ul class="feature-list">
+                <li>Reusable components &amp; screen navigation</li>
+                <li>State management &amp; persistent storage</li>
+              </ul>
+              <ul class="tech-list">
+                <li>html</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <!-- TODO: link the repo once it is public -->
+                <a href="https://bayordenis.github.io/mama-d-kitchen/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo ↗</a>
+                <a href="https://github.com/bayordenis" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ---- Project 3: Mobile apps ---- -->
           <article class="project-card reveal" data-category="mobile">
             <div class="project-thumb thumb-mobile">
               <img src="assets/projects/mobile.png" alt="Screens from React Native mobile applications" loading="lazy" onerror="this.remove()" />
@@ -384,7 +429,7 @@
           <p class="lead">Let's discuss how technology can help solve your problem — whether it's a job opportunity, a freelance project or a collaboration.</p>
           <ul class="contact-links">
             <!-- TODO: replace with your professional email -->
-            <li><a href="mailto:bayordenis766@gmail.com" id="email-link"><span aria-hidden="true">✉</span> your.email@example.com</a></li>
+            <li><a href="mailto:bayordenis766@gmail.com" id="email-link"><span aria-hidden="true">✉</span> bayordenis766@gmail.com</a></li>
             <li><a href="https://github.com/bayordenis" target="_blank" rel="noopener"><span aria-hidden="true">⌘</span> github.com/bayordenis</a></li>
             <!-- TODO: replace with your LinkedIn profile URL -->
             <li><a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener"><span aria-hidden="true">in</span> LinkedIn</a></li>

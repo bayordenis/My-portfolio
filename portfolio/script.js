@@ -8,6 +8,43 @@ document.addEventListener("DOMContentLoaded", () => {
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+    // ---------- Hero headline animation ----------
+  const heroTitle = document.querySelector(".hero h1");
+  const heroText = document.querySelector(".hero-text");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (heroTitle && !reduceMotion) {
+    let index = 0;
+    const splitWords = (node) => {
+      [...node.childNodes].forEach((child) => {
+        if (child.nodeType === Node.TEXT_NODE) {
+          const frag = document.createDocumentFragment();
+          child.textContent.split(/(\s+)/).forEach((part) => {
+            if (!part) return;
+            if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(" ")); return; }
+            const outer = document.createElement("span");
+            const inner = document.createElement("span");
+            outer.className = "word";
+            inner.textContent = part;
+            inner.style.setProperty("--i", index++);
+            outer.appendChild(inner);
+            frag.appendChild(outer);
+          });
+          child.replaceWith(frag);
+        } else if (child.nodeType === Node.ELEMENT_NODE) {
+          splitWords(child);
+        }
+      });
+    };
+    splitWords(heroTitle);
+
+    const after = `${index * 75 + 150 + 500}ms`;
+    heroTitle.style.setProperty("--after", after);
+    heroText.style.setProperty("--after", after);
+    heroTitle.classList.add("is-split");
+    heroText.classList.add("is-animated");
+  }
+
   // ---------- Header shadow on scroll ----------
   const header = document.querySelector(".site-header");
   const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 10);
